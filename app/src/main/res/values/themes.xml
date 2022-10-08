@@ -16,6 +16,14 @@
     <!-- SPLASHSCREEN-->
     <style name = "SplashSCREEN" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/splashscreen_bg</item>
-
     </style>
+    <style name ="AppThemeMaterial" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <color name="colorWhite" />
+    <color name="colorAccent">#FDAFA9</color>
 </resources>

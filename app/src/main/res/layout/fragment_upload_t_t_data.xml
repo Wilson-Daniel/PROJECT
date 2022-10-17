@@ -126,7 +126,8 @@
                 android:id="@+id/upload_SubjectName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Subject Name" />
+                android:hint="Subject Name"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <ImageView
                 android:id="@+id/upload_SubjectName_select"
@@ -138,14 +139,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/upload_teacherName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Teacher Name" />
+                android:hint="Teacher Name"
+                android:minHeight="48dp" />
 
             <ImageView
                 android:id="@+id/upload_teacherName_select"
@@ -154,6 +156,12 @@
                 android:layout_weight="1"
                 android:src="@drawable/aa" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/upload_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

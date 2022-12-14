@@ -7,189 +7,116 @@
     tools:context=".AlertsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
+
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000"
-        android:contentDescription="For more ui/ux visit www.materialuiux.com"
-        tools:context=".MainActivity"
-        tools:ignore="ScrollViewSize">
-
-        <!-- Cover Layout -->
-        <RelativeLayout
-            android:id="@+id/id_background_RelativeLayout"
-            android:layout_width="match_parent"
-            android:layout_height="344dp"
-            android:contentDescription="For more ui/ux visit www.materialuiux.com">
-
-            <!-- Cover Image -->
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                android:scaleType="fitXY"
-                app:srcCompat="@raw/image"
-                tools:ignore="ContentDescription" />
-
-            <!-- change Cover Button * you need to insert java code for add photo image * -->
-            <ImageView
-                android:id="@+id/id_changeCover_ImageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_margin="16dp"
-                android:background="@raw/bg_rectangle2"
-                android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                tools:ignore="ContentDescription" />
-        </RelativeLayout>
-
+        android:background="#DEE4E6"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/id_background_RelativeLayout"
-            android:background="#c9c8ca"
-            android:contentDescription="For more ui/ux visit www.materialuiux.com">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <!-- Post List -->
-            <RecyclerView
-                android:id="@+id/my_recycler_view"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginRight="50dp"
-                android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                tools:listitem="@layout/list_post_item" />
-
-        </LinearLayout>
-
-
-        <!-- Profile Image and full names and (flowers / flowing)
-         * you need to insert java code ro for the background * -->
-        <RelativeLayout
-            android:id="@+id/id_r1"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="180dp"
-            android:contentDescription="For more ui/ux visit www.materialuiux.com">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginLeft="36dp"
-                android:layout_marginTop="124dp"
-                android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                    android:text="Followers"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="HardcodedText,MissingClass" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="2dp"
-                    android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                    android:text="999"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    tools:ignore="HardcodedText,MissingClass" />
-
-            </LinearLayout>
-
-            <RelativeLayout
-                android:id="@+id/id_profile_ImageView"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:contentDescription="For more ui/ux visit www.materialuiux.com">
+                android:layout_height="148dp">
 
                 <ImageView
-                    android:layout_width="151dp"
-                    android:layout_height="151dp"
-                    android:layout_centerInParent="true"
-                    android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                    android:src="@raw/profileimage"
-                    app:civ_border_color="#314357"
-                    app:civ_border_width="2dp"
-                    tools:ignore="MissingClass" />
+                    android:id="@+id/imageView17"
+                    android:layout_width="482dp"
+                    android:layout_height="237dp"
+                    android:layout_marginRight="100dp"
+                    android:src="@drawable/loginbg_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.338"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/alert_image_main_edges" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="60dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="Alerts"
+                    android:textColor="#272F40"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:padding="2dp"
+                    android:text="Upcoming Events"
+                    android:textColor="#272F40"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <ImageView
-                    android:id="@+id/id_pickImage_ImageView"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_margin="10dp"
-                    android:background="@raw/bg_circle"
-                    android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                    tools:ignore="ContentDescription" />
-            </RelativeLayout>
-
+                    android:id="@+id/imageView9"
+                    android:layout_width="311dp"
+                    android:layout_height="315dp"
+                    android:layout_marginStart="28dp"
+                    android:src="@drawable/alert_activity_main_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.497" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/id_profile_ImageView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="13dp"
-                android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                android:text="Heath Ledger"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText,MissingClass" />
+                android:fontFamily="@font/outfit_medium"
+                android:padding="2dp"
+                android:text="Upcoming Events"
+                android:textColor="#272F40"
+                android:textSize="14sp" />
 
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="124dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginRight="36dp"
-                android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="9dp"
+                android:background="@drawable/alerts_imageview_sample"
+                android:padding="3dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                    android:text="Following"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="HardcodedText,MissingClass" />
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="Datesheet"
+                    android:textColor="#272F40"
+                    tools:layout_editor_absoluteX="7dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="2dp"
-                    android:contentDescription="For more ui/ux visit www.materialuiux.com"
-                    android:text="999"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    tools:ignore="HardcodedText,MissingClass" />
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/alert_image_main_edges"
+                app:srcCompat="@drawable/alerts_imageview_sample" />
 
-        </RelativeLayout>
-
-
-    </RelativeLayout>
-
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

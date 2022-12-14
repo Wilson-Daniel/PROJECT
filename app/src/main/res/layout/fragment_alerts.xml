@@ -83,9 +83,12 @@
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="9dp"
                 android:fontFamily="@font/outfit_medium"
                 android:padding="2dp"
-                android:text="Upcoming Events"
+                android:text="Assignment Submission"
                 android:textColor="#272F40"
                 android:textSize="14sp" />
 
@@ -93,20 +96,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginLeft="9dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginRight="9dp"
                 android:background="@drawable/alerts_imageview_sample"
                 android:padding="3dp">
 
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/outfit_medium"
-                    android:text="Datesheet"
-                    android:textColor="#272F40"
-                    tools:layout_editor_absoluteX="7dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Datesheet"
+                android:textColor="#272F40" />
 
             <ImageView
                 android:id="@+id/imageView14"
